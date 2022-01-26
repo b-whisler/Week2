@@ -1,2 +1,1 @@
-# Week2
- 
+A project utilizing JUnit and Maven to test Student and StudentLogic classes.
