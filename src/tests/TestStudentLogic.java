@@ -22,8 +22,8 @@ public class TestStudentLogic {
 	
 	@Test
 	public void calculateAge() {
-		// Adds the number of years since the creation of the test to the expected result to future-proof it
-		assertEquals(22 + ChronoUnit.YEARS.between(LocalDate.now(), LocalDate.of(2022, 1, 25)), studentLogic.calculateAge(student1));
+		// Adds to the number of years based on the birth date to future-proof the test
+		assertEquals(22 + ChronoUnit.YEARS.between(LocalDate.now(), LocalDate.of(2022, 1, 1)), studentLogic.calculateAge(student1));
 	}
 	
 	@Test
